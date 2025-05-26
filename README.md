@@ -6,24 +6,19 @@ Nesta atividade, você irá completar o projeto anterior permitindo cadastrar e 
 
 ## Informações do trabalho
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Luca Silva Domenici
+- Matricula: 896091
+- Proposta de projeto escolhida: Catálogo de Filmes
+- Breve descrição sobre seu projeto: Central dos Filmes é um projeto de um site de catálogo de filmes de todos os gêneros. O site possui uma home-page onde estão dispostos os filmes mais populares, uma barra lateral com as novidades, os filmes lançados recentemente, uma página de pesquisa de filmes por categorias de gênero e ano de lançamento, uma página dos filmes favoritos do usuário e uma página disposta para cara filme de forma interligada pelo JSON Server. Por enquanto o site ainda possui 10 filmes, porém será atualizado com um catálogo extenso para o usuário.
+Print do teste da API com visualização d
 
 **Print do testes da API com Postman ou similar**
 
-<<  COLOQUE A IMAGEM GET AQUI >>
-
-<<  COLOQUE A IMAGEM POST AQUI >>
-
-<<  COLOQUE A IMAGEM PUT AQUI >>
-
-<<  COLOQUE A IMAGEM DELETE AQUI >>
+![alt text](image.png)
 
 **Print da aba NETWORK com requisições Fetch/XHR de POST**
 
-<<  COLOQUE A IMAGEM AQUI >>
+![alt text](image-1.png)
 
 ## **Orientações Gerais**
 
