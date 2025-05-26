@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luca Silva Domenici</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+
+<body style="background-color: rgb(36, 36, 36);">
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+
+  <!-- CABEÇALHO -->
+
+  <nav class="navbar navbar-expand-lg" style="background-color: #6f0000 ;">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold text-white " href="index.html"><img class="img-fluid" width="175" height="225"
+          src="assets/img/logotipo.png"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success text-white border-white bg-danger" type="submit">Search</button>
+        </form>
+
+
+        <ul class="navbar-nav fs-5">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="categorias-genero.html">Categorias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="favoritos.html">Favoritos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="login.html">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="cadastro_filmes.html">Editar</a>
+          </li>   
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- BARRA-LATERAL + CORPO -->
+
+  <div class="container-fluid">
+    <div class="row">
+
+
+      <!-- BARRA-LATERAL -->
+
+      <div class="col-3 d-flex barra-lateral">
+        <div class="barra-lateral" style="background-color: #8b0303;">
+          <p class="fs-2 text-white fw-bold ps-4 pt-2">Novidades</p>
+
+          <div id="artigo">
+            <div class="pe-2 ps-4">
+              <div id="artigo">
+                <a href="detalhes.html?id=1">
+                  <div class="card bg-dark-subtle" style="width: 18rem;">
+                    <img height="430"
+                      src="https://upload.wikimedia.org/wikipedia/pt/5/57/Ainda_Estou_Aqui_2024_poster.jpg">
+                    <div class="card-body">
+                      <h5 class="card-title">Ainda Estou Aqui</h5>
+                      <p class="card-text" style="width: 260px;">No início da década de 1970, o Brasil enfrenta o
+                        endurecimento da ditadura militar. No Rio de
+                        Janeiro, a família Paiva - Rubens, Eunice e seus cinco filhos - vive à beira da praia em uma
+                        casa de portas abertas para os amigos...</p>
+                      <a href="#" class="btn btn-secondary text-white">Favoritar</a>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div id="artigo">
+            <div class="pt-5 pe-4 ps-4 pb-5">
+              <div id="artigo">
+                <a href="detalhes.html?id=2">
+                  <div class="card bg-dark-subtle" style="width: 18rem;">
+                    <img width="287" height="430"
+                      src="https://m.media-amazon.com/images/S/pv-target-images/d40e2853996d20ff038e1a9bb5cad0c2bd75360b123a8daae467cd34c60c4e36.jpg">
+                    <div class="card-body">
+                      <h5 class="card-title">A Substância</h5>
+                      <p class="card-text" style="width: 260px;">Elisabeth Sparkle, renomada por um programa de
+                        aeróbica, enfrenta um golpe devastador quando seu chefe a demite...</p>
+                      <a href="#" class="btn btn-secondary text-white">Favoritar</a>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CORPO-->
+
+      <div class="col-9 corpo">
+        <div class="corpo">
+
+          <p class="fs-2 text-white pt-4 fw-bold">Itens em Destaque</p>
+
+          <div id="carouselExampleCaptions" class="carousel slide pe-3" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="detalhes.html?id=4"><img
+                    src="https://cabanadoleitor.com.br/wp-content/uploads/2022/11/Avatar_O_Caminho_da_Agua_James_Cameron_Cinema_CDL_2560x1440_03-1280x720.webp"
+                    class="d-block w-100"></a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="fs-1">Avatar 2</h5>
+                  <p class="borda">No exuberante mundo alienígena de Pandora vivem os Na'vi, seres que parecem ser
+                    primitivos, mas são altamente evoluídos...</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <a href="detalhes.html?id=5"><img src="https://i.ytimg.com/vi/e_64HEj21kA/maxresdefault.jpg"
+                    class="d-block w-100"></a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="fs-1">Homem-Aranha</h5>
+                  <p class="borda">Depois de ser picado por uma aranha geneticamente modificada em uma demonstração
+                    científica, o jovem nerd Peter Parker ganha superpoderes...</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <a href="detalhes.html?id=1"><img
+                    src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/02/elenco-do-filme-ainda-estou-aqui.jpg"
+                    class="d-block w-100"></a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="fs-1">Ainda Estou Aqui</h5>
+                  <p class="borda">No início da década de 1970, o Brasil enfrenta o endurecimento da ditadura militar.
+                    No Rio de Janeiro, a família Paiva - Rubens, Eunice e seus cinco filhos - vive à beira da praia em
+                    uma casa de portas abertas para os amigos...</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <p class="fs-2 text-white pt-4 fw-bold">Todos os itens</p>
+
+          <div class="d-flex flex-wrap flex-row mb-4" id="telaFilmes">
+
+            
+
+          <p class="fs-2 text-white pt-4 fw-bold">Informaçõs do Aluno</p>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-7 d-block">
+                <p class=" fs-5 text-white">Sobre</p>
+                <p class="text-wrap" style="color: rgba(242, 234, 234, 0.475);">O autor da página é Luca Silva Domenici,
+                  aluno do curso de Sistemas de Informação da PUC Minas Campus São Gabriel. O trabalho refere-se à um
+                  site de catálogo de filmes, trabalho da matéria DIW (Desenvolvimento de Interfaces Web).</p>
+              </div>
+
+              <div class="col-5">
+                <div class="d-block">
+                  <p class="fs-5 text-white">Autoria</p>
+                </div>
+                <div class="d-flex">
+                  <b class="text-white">Aluno:</b> &nbsp;
+                  <p class="text-wrap mb-1" style="color: rgba(242, 234, 234, 0.475);">Luca Silva Domenici</p>
+                </div>
+                <div class="d-flex">
+                  <b class="text-white">Curso:</b> &nbsp;
+                  <p class="text-wrap mb-1" style="color: rgba(242, 234, 234, 0.475);">Sistemas de Informação</p>
+                </div>
+                <div class="d-flex">
+                  <b class="text-white">Turno:</b> &nbsp;
+                  <p class="text-wrap mb-3" style="color: rgba(242, 234, 234, 0.475);">Noite</p>
+                </div>
+
+                <div class="d-flex">
+                  <p class="fs-5 text-white">Redes Sociais</p>
+                </div>
+                <div class="d-flex mb-3">
+                  <a href="https://github.com/LucaDomenici">
+                    <p class="text-white mt-1 ms-2">GitHub</p>
+                  </a>
+                  <a href="https://www.instagram.com/luca.domen/">
+                    <p class="text-white mt-1 ms-2">Instagram</p>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RODAPÉ -->
+
+  <footer class="navbar navbar-expand-lg" style="background-color: #6f0000;">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#">Contatos</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#">(31) 9 9201-6139</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#">(31) 9 9221-6439</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page"
+              href="mailto:lucasilvadome@gmail.com">centralfilmes@hotmail.com.br</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+
+  <script>
+    let params = new URLSearchParams(location.search)
+    let id = params.get('id')
+
+    fetch('http://localhost:3000/filmes')
+      .then(res => res.json())
+      .then(data => {
+
+        let card = '';
+        data.forEach(item => {
+        if (item.id > 2){
+            let limite = 120
+            if (item.sinopse.length > limite) {
+            var corte = item.sinopse.lastIndexOf(' ', limite); 
+            if (corte === -1) {
+            corte = limite;
+            }
+
+            var sinopseCurta;
+            sinopseCurta = item.sinopse.slice(0, corte) + '...';
+            }
+
+        card +=
+            `<div class="p-2 pe-4 ps-5">
+              <div id="artigo">
+                <a href="detalhes.html?id=${item.id}">
+                  <div class="card" style="width: 13rem; background-color: rgb(36, 36, 36); border: 1px solid rgb(36, 36, 36);">
+                    <img width="206" height="250"
+                      src="${item.imagem}" class="card-img-top" style="border-radius: 0rem;">
+                    <div class="card-body">
+                      <h5 class="card-title text-white">${item.titulo}</h5>
+                      <p class="card-text text-white pb-3" style="width: 180px;">${sinopseCurta}</p>
+                      <a href="#" class="btn btn-secondary text-white">Favoritar</a>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>`
+
+        document.getElementById('telaFilmes').innerHTML = card;
+        }
+        });
+      })
+
+  </script>
+
+</body>
+
+</html>

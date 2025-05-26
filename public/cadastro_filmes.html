@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luca Silva Domenici</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body onload="init()" style="background-color: rgb(36, 36, 36);">
+
+    <!-- CABEÇALHO -->
+
+    <nav class="navbar navbar-expand-lg" style="background-color: #6f0000 ;">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold text-white " href="index.html"><img class="img-fluid" width="175"
+                    height="225" src="assets/img/logotipo.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success text-white border-white bg-danger"
+                        type="submit">Search</button>
+                </form>
+
+
+                <ul class="navbar-nav fs-5">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="categorias-genero.html">Categorias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="favoritos.html">Favoritos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="cadastro_filmes.html">Editar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CORPO -->
+
+    <div class="container">
+        <div class="row">
+            <div id="msg" class="col-sm-10 offset-sm-1 ">
+                <!--<div class="alert alert-warning">Contato não encontrado.</div>-->
+            </div>
+        </div>
+
+        <p class="fs-2 text-white pt-4 fw-bold">Editar filmes</p>
+
+        <form id="form-filme">
+            <div class="form-group row">
+                <div class="col-sm-2">
+                    <label for="inputId">Id</label>
+                    <input type="text" class="form-control" id="inputId" placeholder="ID" disabled>
+                </div>
+                <div class="col-sm-7">
+                    <label for="inputTitulo">Título (*)</label>
+                    <input type="text" class="form-control" id="inputTitulo" required
+                        placeholder="Informe o título do filme">
+                </div>
+                <div class="col-sm-3">
+                    <label for="inputDuracao">Duração (*)</label>
+                    <input type="text" class="form-control" id="inputDuracao" required
+                        placeholder="Duração">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-2">
+                    <label for="inputData">Data de lançamento (*)</label>
+                    <input type="text" class="form-control" id="inputData" required placeholder="Data de Lancamento">
+                </div>
+                <div class="col-sm-5">
+                    <label for="inputDirecao">Direção</label>
+                    <input type="text" class="form-control" id="inputDirecao" placeholder="Informe a direção do filme">
+                </div>
+                <div class="col-sm-5">
+                    <label for="inputProducao">Produção</label>
+                    <input type="text" class="form-control" id="inputProducao" required
+                        placeholder="Informe a produção do filme">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-6">
+                    <label for="inputImagem1">Imagem de cartaz (*)</label>
+                    <input type="text" class="form-control" id="inputImagem1" required placeholder="Link de Imagem de cartaz do filme">
+                </div>
+                <div class="col-sm-6">
+                    <label for="inputTrailer">Trailer (*)</label>
+                    <input type="text" class="form-control" id="inputTrailer" required placeholder="Link do trailer do filme">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-6">
+                    <label for="inputImagem2">Imagem 2 (*)</label>
+                    <input type="text" class="form-control" id="inputImagem2" required placeholder="Link de Imagem do filme">
+                </div>
+                <div class="col-sm-6">
+                    <label for="inputImagem3">Imagem 3 (*)</label>
+                    <input type="text" class="form-control" id="inputImagem3" required placeholder="Link de Imagem do filme">
+                </div>
+            </div>
+            
+            <div class="form-group row">
+                <div class="col-sm-4">
+                    <small>(*) Campos obrigatórios</small>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-12">
+                    <input type="button" class="btn btn-success" id="btnInsert" value="Inserir">
+                    <input type="button" class="btn btn-warning" id="btnUpdate" value="Alterar">
+                    <input type="button" class="btn btn-danger" id="btnDelete" value="Excluir">
+                    <input type="button" class="btn btn-secondary" id="btnClear" value="Limpar Form">
+                    <a href="search.html"><input type="button" class="btn btn-warning" id="btnClear"
+                            value="Pesquisar Filmes"></a>
+                </div>
+            </div>
+        </form>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <table id="grid-filmes" class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Título</th>
+                            <th scope="col">Duração</th>
+                            <th scope="col">Data</th>
+                            <th scope="col">Direção</th>
+                            <th scope="col">Produção</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-filmes">
+                        <tr>
+                            <td scope="row">1</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="/assets/scripts/app.js"></script>
+    <script>
+        function exibeFilmes() {
+            tableFilmes = document.getElementById("table-filmes");
+
+            // Remove todas as linhas do corpo da tabela
+            tableFilmes.innerHTML = "";
+
+            readFilme(dados => {
+                // Popula a tabela com os registros do banco de dados
+                for (i = 0; i < dados.length; i++) {
+                    let filme = dados[i];
+                    tableFilmes.innerHTML += `<tr><td scope="row">${filme.id}</td>
+                                                    <td>${filme.titulo}</td>
+                                                    <td>${filme.duracao}</td>
+                                                    <td>${filme.dataDeLancamento}</td>
+                                                    <td>${filme.direcao}</td>
+                                                    <td>${filme.producao}</td>
+                                                </tr>`;
+                }
+            })
+        }
+
+        function init() {
+            // Define uma variável para o formulário de contato
+            formFilme = document.getElementById("form-filme");
+
+            // Adiciona funções para tratar os eventos 
+            btnInsert = document.getElementById("btnInsert");
+            btnInsert.addEventListener('click', function () {
+                // Verifica se o formulário está preenchido corretamente
+                if (!formFilme.checkValidity()) {
+                    displayMessage("Preencha o formulário corretamente.");
+                    return;
+                }
+
+                // Obtem os valores dos campos do formulário
+                let campoTitulo = document.getElementById('inputTitulo').value;
+                let campoDuracao = document.getElementById('inputDuracao').value;
+                let campoData = document.getElementById('inputData').value;
+                let campoDirecao = document.getElementById('inputDirecao').value;
+                let campoProducao = document.getElementById('inputProducao').value;
+                let campoImagem1 = document.getElementById('inputImagem1').value;
+                let campoTrailer = document.getElementById('inputTrailer').value;
+                let campoImagem2 = document.getElementById('inputImagem2').value;
+                let campoImagem3 = document.getElementById('inputImagem3').value;
+
+                // Cria um objeto com os dados do contato
+                let filme = {
+                    titulo: campoTitulo,
+                    duracao: campoDuracao,
+                    data: campoData,
+                    direcao: campoDirecao,
+                    producao: campoProducao,
+                    imagem1: campoImagem1,
+                    trailer: campoTrailer,
+                    imagem2: campoImagem2,
+                    imagem3: campoImagem3,
+                };
+
+                // Cria o contato no banco de dados
+                createFilme(filme, exibeFilmes);
+
+                // Limpa o formulario
+                formFilme.reset()
+            });
+
+            // Trata o click do botão Alterar
+            btnUpdate = document.getElementById("btnUpdate");
+            btnUpdate.addEventListener('click', function () {
+                // Obtem os valores dos campos do formulário
+                let campoId = document.getElementById("inputId").value;
+                if (campoId == "") {
+                    displayMessage("Selecione antes um filme para ser alterado.");
+                    return;
+                }
+
+                // Obtem os valores dos campos do formulário
+                let campoTitulo = document.getElementById('inputTitulo').value;
+                let campoDuracao = document.getElementById('inputDuracao').value;
+                let campoData = document.getElementById('inputData').value;
+                let campoDirecao = document.getElementById('inputDirecao').value;
+                let campoProducao = document.getElementById('inputProducao').value;
+                let campoImagem1 = document.getElementById('inputImagem1').value;
+                let campoTrailer = document.getElementById('inputTrailer').value;
+                let campoImagem2 = document.getElementById('inputImagem2').value;
+                let campoImagem3 = document.getElementById('inputImagem3').value;
+
+                // Cria um objeto com os dados do contato
+                let filme = {
+                    titulo: campoTitulo,
+                    duracao: campoDuracao,
+                    data: campoData,
+                    direcao: campoDirecao,
+                    producao: campoProducao,
+                    imagem1: campoImagem1,
+                    trailer: campoTrailer,
+                    imagem2: campoImagem2,
+                    imagem3: campoImagem3,
+                };
+
+                // Altera o contato no banco de dados
+                updateFilme(parseInt(campoId), filme, exibeFilmes);
+
+                // Limpa o formulario
+                formFilme.reset()
+            });
+
+            // Trata o click do botão Excluir
+            btnDelete = document.getElementById('btnDelete');
+            btnDelete.addEventListener('click', function () {
+                let campoId = document.getElementById('inputId').value;
+                if (campoId == "") {
+                    displayMessage("Selecione um filme a ser excluído.");
+                    return;
+                }
+
+                // Exclui o contato no banco de dados
+                deleteFilme(parseInt(campoId), exibeFilmes);
+
+                // Limpa o formulario
+                formFilme.reset()
+            });
+
+            // Trata o click do botão Listar Contatos
+            btnClear = document.getElementById('btnClear');
+            btnClear.addEventListener('click', function () {
+                formFilme.reset()
+            });
+
+            // Oculta a mensagem de aviso após alguns 5 segundos
+            msg = document.getElementById('msg');
+            msg.addEventListener("DOMSubtreeModified", function (e) {
+                if (e.target.innerHTML == "") return;
+                setTimeout(function () {
+                    alert = msg.getElementsByClassName("alert");
+                    alert[0].remove();
+                }, 5000);
+            })
+
+            // Preenche o formulário quando o usuario clicar em uma linha da tabela 
+            gridFilmes = document.getElementById("grid-filmes");
+            gridFilmes.addEventListener('click', function (e) {
+                if (e.target.tagName == "TD") {
+
+                    // Obtem as colunas da linha selecionada na tabela
+                    let linhaFilme = e.target.parentNode;
+                    colunas = linhaFilme.querySelectorAll("td");
+
+                    // Preenche os campos do formulário com os dados da linha selecionada na tabela
+                    document.getElementById('inputId').value = colunas[0].innerText;
+                    document.getElementById('inputTitulo').value = colunas[1].innerText;
+                    document.getElementById('inputDuracao').value = colunas[2].innerText;
+                    document.getElementById('inputData').value = colunas[3].innerText;
+                    document.getElementById('inputDirecao').value = colunas[4].innerText;
+                    document.getElementById('inputProducao').value = colunas[5].innerText;
+                }
+            });
+
+            exibeFilmes();
+        }
+    </script>
+</body>
+
+</html>
