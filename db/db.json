@@ -1,18 +1,132 @@
 {
-  "usuarios": [
+  "filmes": [
     {
-      "id": "187cb7e5-e097-4224-8bc7-b610c855e2b1",
-      "login": "admin",
-      "senha": "123",
-      "nome": "Administrador do Sistema",
-      "email": "admin@abc.com"
+      "titulo": "Ainda Estou Aqui",
+      "duracao": "2h 15m",
+      "data": "7 de novembro de 2024",
+      "direcao": "Walter Sales",
+      "producao": "Maria Carlota Fernandes Bruno, Rodrigo Teixeira, Martine de Clermont-Tonnerre",
+      "imagem1": "",
+      "trailer": "",
+      "imagem2": "",
+      "imagem3": "",
+      "id": "1"
     },
     {
-      "id": "ec37c83d-4b7f-458d-9e10-3fda7d37cd3e",
-      "login": "user",
-      "senha": "123",
-      "nome": "Usuario Comum",
-      "email": "user@abc.com"
+      "titulo": "A Substância",
+      "duracao": "2h 20m",
+      "data": "undefined",
+      "direcao": "Coralie Fargeat",
+      "producao": "Working Title Films; A Good Story",
+      "imagem1": "",
+      "trailer": "",
+      "imagem2": "",
+      "imagem3": "",
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "imagem": "https://m.media-amazon.com/images/I/91N1lG+LBIS._AC_UF894,1000_QL80_.jpg",
+      "imagem2": "https://lumiere-a.akamaihd.net/v1/images/1_avtr-226_ec8e6081.jpeg?region=0,0,3840,2160",
+      "imagem3": "https://unintese.com.br/wp-content/uploads/2023/06/magic-avatar-forest-in-hd-y1r1wrc9tjhdscry-1024x576.jpg",
+      "trailer": "https://www.youtube.com/embed/5PSNL1qE6VY?si=uPcTy7LnnYKZO0Wq",
+      "titulo": "Avatar",
+      "dataDeLancamento": "18 de dezembro de 2009 (Brasil)",
+      "direcao": "James Cameron",
+      "producao": "Jon Landau",
+      "duracao": "2h 42m",
+      "sinopse": "No exuberante mundo alienígena de Pandora vivem os Na'vi, seres que parecem ser primitivos, mas são altamente evoluídos. Como o ambiente do planeta é tóxico, foram criados os avatares, corpos biológicos controlados pela mente humana que se movimentam livremente em Pandora. Jake Sully, um ex-fuzileiro naval paralítico, volta a andar através de um avatar e se apaixona por uma Na'vi. Esta paixão leva Jake a lutar pela sobrevivência de Pandora."
+    },
+    {
+      "id": "4",
+      "imagem": "https://m.media-amazon.com/images/I/71s3cEqEZTL._AC_UF894,1000_QL80_.jpg",
+      "imagem2": "https://s2-techtudo.glbimg.com/HzsRlPmSHadingtjayr04b4G-Wo=/0x0:1200x700/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2022/y/R/1kKCcuRJyqIbEVAkdRzw/avatar-o-caminho-da-agua-2.jpg",
+      "imagem3": "https://s2-valor.glbimg.com/3eTx_sgqoOLzfp3unM_tQIMTeUE=/0x0:4000x2110/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2022/B/1/cqhHWySgCa0s6NvWLOBw/avatar.jpg",
+      "trailer": "https://www.youtube.com/embed/-cmwzbZ072U?si=IQLAeq0GkjUFl_un",
+      "titulo": "Avatar 2",
+      "dataDeLancamento": "15 de dezembro de 2022 (Brasil)",
+      "direcao": "James Cameron",
+      "producao": "20th Century Studios, Lightstorm Entertainment, TSG Entertainment",
+      "duracao": "3h 12m",
+      "sinopse": "Após formar uma família, Jake Sully e Ney'tiri fazem de tudo para ficarem juntos. No entanto, eles devem sair de casa e explorar as regiões de Pandora quando uma antiga ameaça ressurge, e Jake deve travar uma guerra difícil contra os humanos."
+    },
+    {
+      "id": "5",
+      "imagem": "https://upload.wikimedia.org/wikipedia/pt/1/14/Spide-Man_Poster.jpg",
+      "imagem2": "https://cineset.com.br/wp-content/uploads/2021/11/Critica-Homem-Aranha-2002-3.jpg",
+      "imagem3": "https://www.papodecinema.com.br/wp-content/uploads/2012/07/20181126-4-e1543320264296.jpg",
+      "trailer": "https://www.youtube.com/embed/t06RUxPbp_c?si=6HmZSyZjQc9iiVzn",
+      "titulo": "Homem Aranha",
+      "dataDeLancamento": "17 de maio de 2002 (Brasil)",
+      "direcao": "Sam Raimi",
+      "producao": "Marvel Entertainment, Columbia Pictures, Laura Ziskin Productions",
+      "duracao": "2h 1m",
+      "sinopse": "Depois de ser picado por uma aranha geneticamente modificada, o jovem nerd Peter Parker ganha superpoderes. Inicialmente, ele pretende usá-los para ganhar dinheiro, mas ao presenciar o assassinato do tio Ben, decide usá-los para combater o mal."
+    },
+    {
+      "id": "6",
+      "imagem": "https://m.media-amazon.com/images/I/A1P7N8O3OwL._AC_UF1000,1000_QL80_.jpg",
+      "imagem2": "https://sm.ign.com/ign_br/news/j/jurassic-w/jurassic-world-3-will-be-more-like-the-original-jurassic-par_8cf2.jpg",
+      "imagem3": "https://tm.ibxk.com.br/2023/10/20/20153131252299.jpg?ims=1200xorig",
+      "trailer": "https://www.youtube.com/embed/ccuMLmZRd5g?si=IFln-wa3fwNOykbk",
+      "titulo": "Jurassic World",
+      "dataDeLancamento": "11 de junho de 2015 (Brasil)",
+      "direcao": "Colin Trevorrow",
+      "producao": "Universal Studios, Amblin Entertainment, Legendary Pictures, The Kennedy/Marshall",
+      "duracao": "2h 4m",
+      "sinopse": "O Parque dos Dinossauros está aberto ao público. Porém, um dos animais criados geneticamente escapa do controle, ameaçando a segurança de todos."
+    },
+    {
+      "id": "7",
+      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJUQlOhH3hYqwVdEIEHw4NLfvR2FPjvYOjmw&s",
+      "imagem2": "https://occ-0-8407-90.1.nflxso.net/dnm/api/v6/Z-WHgqd_TeJxSuha8aZ5WpyLcX8/AAAABZzDupwylH-h0zoEyASxaxb-eXBvlskslcNE-zYTrF4-vtehLHmkb13FL95R8M9mjji5whxBux6iS-fKTRiHju_wAuMgRi7Dwybo.jpg?r=608",
+      "imagem3": "https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/03/230306130026-keanu-reeves-the-matrix-restricted.jpg?w=420&h=240&crop=1&quality=85",
+      "trailer": "https://www.youtube.com/embed/vKQi3bBA1y8?si=Dl5TIyakan1qCo8Y",
+      "titulo": "Matrix",
+      "dataDeLancamento": "21 de maio de 1999 (Brasil)",
+      "direcao": "Lana Wachowski, Lilly Wachowski",
+      "producao": "Village Roadshow Pictures, Warner Bros. Entertainment, Silver Pictures, WarnerBros",
+      "duracao": "2h 16m",
+      "sinopse": "O jovem programador Thomas Anderson descobre que vive em uma simulação criada por máquinas inteligentes e se junta à resistência para libertar a humanidade."
+    },
+    {
+      "id": "8",
+      "imagem": "https://m.media-amazon.com/images/S/pv-target-images/1fe06f6e61a6493972cabd4da5522dd2a07e0396ca8a6ea4705a05ffd8f4b03d.jpg",
+      "imagem2": "https://media.semprefamilia.com.br/semprefamilia/2015/12/starwarsvii-729ef8d2.jpg",
+      "imagem3": "https://sm.ign.com/t/ign_br/articlepage/d/details-ru/details-rumored-for-new-star-wars-the-force-awaken_dw5e.1280.jpg",
+      "trailer": "https://www.youtube.com/embed/sGbxmsDFVnE?si=GTXSZiFwAOfBiYnB",
+      "titulo": "Star Wars 7",
+      "dataDeLancamento": "17 de dezembro de 2015 (Brasil)",
+      "direcao": "J. J. Abrams",
+      "producao": "J. J. Abrams, Bryan Burk, Kathleen Kennedy",
+      "duracao": "2h 16m",
+      "sinopse": "A queda do Império deu origem à Primeira Ordem. A resistência busca encontrar Luke Skywalker, que desapareceu, para deter essa nova ameaça."
+    },
+    {
+      "id": "9",
+      "imagem": "https://upload.wikimedia.org/wikipedia/pt/thumb/2/22/Titanic_poster.jpg/240px-Titanic_poster.jpg",
+      "imagem2": "https://www.oliberal.com/image/contentid/policy:1.553057:1656081198/titanic-capa-movie-widelg.jpg?f=2x1&$p$f=7cb3653&w=1500&$w=f075b93",
+      "imagem3": "https://veja.abril.com.br/wp-content/uploads/2023/02/titanic.jpg?crop=1&resize=1212,909",
+      "trailer": "https://www.youtube.com/embed/IH6_CA_ocqY?si=BjS5drr7mUGbXyD_",
+      "titulo": "Titanic",
+      "dataDeLancamento": "16 de janeiro de 1998 (Brasil)",
+      "direcao": "James Cameron",
+      "producao": "Paramount Pictures; 20th Century Fox; Lightstorm Entertainment",
+      "duracao": "3h 14m",
+      "sinopse": "Um artista pobre e uma jovem rica se conhecem e se apaixonam na fatídica viagem inaugural do Titanic em 1912. Embora esteja noiva do arrogante herdeiro de uma siderúrgica, a jovem desafia sua família e amigos em busca do verdadeiro amor."
+    },
+    {
+      "id": "10",
+      "imagem": "https://upload.wikimedia.org/wikipedia/pt/thumb/9/9b/Avengers_Endgame.jpg/250px-Avengers_Endgame.jpg",
+      "imagem2": "https://assets.b9.com.br/wp-content/uploads/2019/06/EBC2000_v829.1233-1280x720.jpg",
+      "imagem3": "https://rollingstone.com.br/media/uploads/vingadores_ultimato_1.jpg",
+      "trailer": "https://www.youtube.com/embed/PgrmbRID0eY?si=xwhSes-6xsB0al0B",
+      "titulo": "Vingadores Ultimato",
+      "dataDeLancamento": "25 de abril de 2019 (Brasil)",
+      "direcao": "Anthony Russo, Joe Russo",
+      "producao": "Anthony Russo, Stephen McFeely, Christopher Markus",
+      "duracao": "3h 1m",
+      "sinopse": "Após o estalo de Thanos, os heróis sobreviventes se unem para tentar reverter o caos e trazer de volta seus amigos e entes queridos em uma batalha épica."
     }
   ]
 }
