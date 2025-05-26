@@ -1,0 +1,1 @@
+# psg-ads-2025-diw-semana12-atividadepratica-LucaSIlvaDomenici
